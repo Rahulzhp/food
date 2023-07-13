@@ -1,0 +1,50 @@
+.container {
+    background-image: url("../Images/meals.jpg");
+    background-repeat: no-repeat;
+    min-height: 740px;
+    background-position: 50%;
+    background-size: cover;
+    position: relative;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 20px;
+    background: 0 0;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    color: #f5f2f0;
+}
+
+.navbar.scrolled {
+    background: linear-gradient(180deg, rgba(175, 51, 14, 0.8), rgba(24, 28, 41, .92) 100%, rgba(24, 28, 41, .92) 0);
+    box-shadow: 0 12px 16px rgba(243, 107, 29, 0.2);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+
+}
+
+.navbar>div {
+    margin-left: 2px;
+}
+
+.pages {
+    display: flex;
+    gap: 37px;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2px;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: sans-serif;
+
+}
+
+.pages>p:hover {
+    font-size: 15px;
+}

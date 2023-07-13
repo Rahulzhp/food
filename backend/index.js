@@ -3,7 +3,8 @@ const cors = require("cors");
 
 const { connection } = require("./config/db");
 const { usersRoute } = require("./routes/userroute")
-
+const { DishRoute } = require("./routes/dishroute")
+const { OrderRoute } = require("./routes/orderroute")
 const { authenticate } = require("./middleware/auth")
 require('dotenv').config()
 
@@ -25,6 +26,8 @@ app.get("/", (req, res) => {
 
 app.use("/users", usersRoute)
 app.use(authenticate)
+app.use("/dish", DishRoute)
+app.use("/order", OrderRoute)
 
 app.listen(process.env.port, async () => {
     try {
