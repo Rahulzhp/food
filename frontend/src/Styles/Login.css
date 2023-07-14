@@ -1,0 +1,90 @@
+.logn {
+    background-image: url("../Images/highback.jpg");
+    background-repeat: no-repeat;
+    min-height: 740px;
+    background-position: 50%;
+    background-size: cover;
+    position: relative;
+}
+
+.loginMain {
+    padding: 0px;
+}
+
+.loginLogo {
+    display: flex;
+    justify-content: flex-start;
+    width: 95%;
+    margin: auto;
+    padding: 7px;
+}
+
+.loginHed {
+    color: #f5f2f0;
+    margin-top: 31px;
+    text-align: center;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 23px;
+}
+
+.loginHed h1 {
+    font-size: 48px;
+    font-weight: 750;
+    letter-spacing: 0.9px;
+    margin-bottom: 19px;
+}
+
+.loginHed p {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.loginCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginCont>div {
+    width: 600px;
+    height: 400px;
+    background: rgba(37, 39, 44, .7);
+    color: #f5f2f0;
+    padding: 0;
+    border-radius: 16px;
+
+}
+
+/* .loginCont>div>div {
+    width: 75%;
+    margin: auto;
+    margin-top: 25px;
+
+} */
+.policy {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 69px;
+}
+
+.policy>p {
+    font-size: 11px;
+    letter-spacing: 0.3px;
+}
+
+
+
+.loginBtn {
+    display: flex;
+    flex-direction: column;
+
+    margin: auto;
+    margin-top: 93px;
+    gap: 23px;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react'
-import { Image } from '@chakra-ui/react'
-import logo from "../Images/logo.png"
-import { Link } from 'react-router-dom'
-import "../Styles/Navbar.css"
+import React, { useEffect, useState } from 'react';
+import { Image } from '@chakra-ui/react';
+import logo from "../Images/Foodpanda.png";
+import { Link } from 'react-router-dom';
+import "../Styles/Navbar.css";
 
 const Navbar = () => {
-    const pro = JSON.parse(localStorage.getItem('user'));
+    const authrization = localStorage.getItem("food");
     const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
@@ -25,37 +25,32 @@ const Navbar = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+    const handleCart = () => {
+        alert("cart")
+    }
     return (
-        <>
-            <div className='container'>
-                <div className={scrolled ? 'navbar scrolled' : 'navbar'}>
-                    <div>
-                        <Link to="/"><Image src={logo} alt="logo"></Image></Link>
-
-                    </div>
-                    <div>
-                        <div className='pages'>
-                            {/* <p>Dashboard</p> */}
-                            <Link to="/" > Home</Link>
-                            {/* <p>About Us</p> */}
-                            <Link > Menu</Link>
-                            {/* <p>Pricing</p> */}
-                            <Link to="/price" > Services</Link>
-                            {/* <p onClick={onOpen}>Create Script</p> */}
-                            <Link >About Us</Link>
-                            <Link >Cart</Link>
-                            {/* <p>Blog</p> */}
-                            {pro ? (
-                                <Link to='/profile'>Profile</Link>
-                            ) : (
-                                <Link to='/login'>Login</Link>
-                            )}
-                        </div>
-                    </div>
+        <div className={scrolled ? 'navbar scrolled' : 'navbar'}>
+            <div>
+                <Link to="/">
+                    <Image width={"60%"} src={logo} alt="logo" />
+                </Link>
+            </div>
+            <div>
+                <div className='pages'>
+                    <Link to="/">Home</Link>
+                    <Link to="/menu">Menu</Link>
+                    <Link to="/service">Services</Link>
+                    <Link to="/about">About Us</Link>
+                    <Link onClick={handleCart} to="/cart">Cart</Link>
+                    {authrization ? (
+                        <Link to='/profile'>Profile</Link>
+                    ) : (
+                        <Link to='/login'>Login</Link>
+                    )}
                 </div>
             </div>
-        </>
-    )
-}
+        </div>
+    );
+};
 
-export default Navbar
+export default Navbar;

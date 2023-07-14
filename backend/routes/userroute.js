@@ -33,7 +33,7 @@ usersRoute.post("/login", async (req, res) => {
             bcrypt.compare(password, user.password, (err, result) => {
                 if (result) {
                     const token = jwt.sign({ userId: user._id }, "masai");
-                    res.send({ success: "Login successfully", token });
+                    res.send({ success: "Login successfully", token, user });
                 } else {
                     res.send("Invalid password"); // Send an error message for incorrect password
                 }

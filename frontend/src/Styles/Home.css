@@ -1,0 +1,53 @@
+.mainContainer {
+    background-image: url("../Images/highback.jpg");
+    background-repeat: no-repeat;
+    min-height: 740px;
+    background-position: 50%;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+    background-color: rgba(170, 170, 170, 0.3);
+}
+
+.home {
+    position: absolute;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 59px;
+    margin-top: 79px;
+}
+
+.homeLogo>img {
+    width: 25%;
+}
+
+.home_title {
+    width: 75%;
+
+    text-align: left;
+}
+
+.home_title>h3 {
+    margin-top: 13px;
+    font-size: 55px;
+    font-weight: bold;
+    letter-spacing: -0.1px;
+}
+
+.home_title>p {
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+    margin-top: 13px;
+    letter-spacing: 0.9px;
+    margin-bottom: 23px;
+}
+
+.home span {
+    color: #ff4d00;
+}
+
+.home_btn {
+    display: flex;
+    justify-content: start;
+}
