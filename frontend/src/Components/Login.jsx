@@ -41,7 +41,7 @@ const Login = () => {
 
     const handlelogin = (e) => {
         e.preventDefault()
-        axios.post("http://localhost:8080/users/login", payload)
+        axios.post("https://food-server-6xik.onrender.com/users/login", payload)
             .then((res) => {
                 setLocal(res.data.user)
                 console.log(res)
@@ -74,10 +74,13 @@ const Login = () => {
                 console.log(er)
             })
     }
-
+    const handlelogout = () => {
+        localStorage.removeItem("food");
+        navigate("/");
+    }
     const handlesignup = (e) => {
         e.preventDefault()
-        axios.post("http://localhost:8080/users/register", signuppayload)
+        axios.post("https://food-server-6xik.onrender.com/users/register", signuppayload)
             .then((res) => {
                 console.log(res)
                 if (res.data === "Registered") {
@@ -125,8 +128,8 @@ const Login = () => {
                     <div>
                         <div className='loginBtn'>
                             <div><Button onClick={onOpenLogin} width={"205px"} backgroundColor={"#cc5e5e"} color={"white"} borderRadius={"19px"}>Login with Email</Button></div>
-                            <div><Button width={"205px"} backgroundColor={"#cc5e5e"} color={"white"} borderRadius={"19px"}>Continue with Google</Button></div>
                             <div><Button onClick={onOpenCreate} width={"205px"} backgroundColor={"#cc5e5e"} color={"white"} borderRadius={"19px"}>Create an Account</Button></div>
+                            <div><Button onClick={handlelogout} width={"205px"} backgroundColor={"#cc5e5e"} color={"white"} borderRadius={"19px"}>Log out</Button></div>
                             <Text>Forgot Password?</Text>
                         </div>
                         <div className='policy'>

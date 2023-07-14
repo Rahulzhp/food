@@ -6,7 +6,7 @@ import trst from "../Images/trst.svg"
 
 const Service = () => {
     return (
-        <div className='services'>
+        <div id='service' className='services'>
             <div>
                 <h1>Our Services</h1>
                 <p>This is what makes our product different</p>

@@ -25,7 +25,7 @@
 
 .pages {
     display: flex;
-    gap: 37px;
+    gap: 57px;
     justify-content: space-between;
     align-items: center;
     margin-right: 2px;
@@ -42,4 +42,19 @@
 
 .pages a:hover {
     font-size: 15px;
+    color: bisque;
+}
+
+.navuser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navuser>img {
+    width: 37%;
+}
+
+.navuser>:first-child {
+    width: 35%;
 }
