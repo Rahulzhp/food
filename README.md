@@ -1,7 +1,7 @@
 ### Order Online Food App####
 
 
-![Fleksa Project](https://github.com/Rahulzhp/onlinemang/assets/107567053/c8f02a99-8449-4b12-b2f4-d790016826fd)
+![Fleksa Project](https://github.com/Rahulzhp/food/assets/107567053/d680af85-9648-47dd-9dff-49c6b6eacd2f)
 
 # Clone of Online Food Delivery App
 
@@ -28,21 +28,18 @@ To make this clone we have used HTMl, CSS and JavaScript, ReactJS for front-end 
 
 
 -Desktop View
-<img width="710" alt="image" src="" />
+<img width="710" alt="image" src="https://github.com/Rahulzhp/food/assets/107567053/a32420bb-637b-4970-a870-70640199ba51" />
 
 
 ## Our Dishes page
 -Desktop View
-<img width="710" alt="image" src="" />
+<img width="710" alt="image" src="https://github.com/Rahulzhp/food/assets/107567053/1e970782-602f-47d3-9e17-f3509d90ac13" />
 
 
 ## Cart Page
-<img width="710" alt="image" src="" />
+<img width="710" alt="image" src="https://github.com/Rahulzhp/food/assets/107567053/ab83acd1-a1e3-4fa2-a203-f1396e1c3049" />
 
 
-## Login page
 
--Desktop View
-<img width="710" alt="image" src="" />
 
 
