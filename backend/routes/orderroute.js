@@ -28,12 +28,21 @@ OrderRoute.post("/add", async (req, res) => {
     try {
         let project = new Order(data)
         await project.save()
-        res.send("posted")
+        res.send({ message: "posted", project })
 
     } catch (er) {
         console.log("er", er)
     }
 })
+
+OrderRoute.delete('/', async (req, res) => {
+    try {
+        await Order.deleteMany();
+        res.send("All items deleted from cart");
+    } catch (err) {
+        res.send({ "err": "Something went wrong" });
+    }
+});
 
 OrderRoute.patch('/:id', async (req, res) => {
     const id = req.params.id;

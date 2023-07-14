@@ -29,7 +29,7 @@ app.use("/dish", DishRoute)
 app.use(authenticate)
 app.use("/order", OrderRoute)
 
-app.listen(process.env.port, async () => {
+app.listen(process.env.PORT, async () => {
     try {
         await connection;
         console.log("connected to db")
@@ -37,5 +37,5 @@ app.listen(process.env.port, async () => {
     } catch (er) {
         console.log(er)
     }
-    console.log(`server is running in port ${process.env.port}`)
+    console.log(`server is running in port ${process.env.PORT}`)
 })

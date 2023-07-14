@@ -10,6 +10,15 @@ const jwt = require("jsonwebtoken")
 const usersRoute = express.Router()
 
 // userroute.use(express.json())
+
+usersRoute.get("/", async (req, res) => {
+    try {
+        let post = await UserModel.find()
+        res.send({ post })
+    } catch (err) {
+        res.send({ "err": "Something went wrong" })
+    }
+})
 usersRoute.post("/register", async (req, res) => {
     const { name, email, password } = req.body
     try {
